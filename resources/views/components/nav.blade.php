@@ -30,11 +30,10 @@
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="{{ request()->is('/') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Courses</a>
-              <a href="compare" class="{{ request()->is('compare') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" }} rounded-md px-3 py-2 text-sm font-medium">Compare</a>
-              <a href="favorites" class="{{ request()->is('favorites') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" }} rounded-md px-3 py-2 text-sm font-medium">Favorites</a>
-              <a href="contacts" class="{{ request()->is('contacts') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white" }} rounded-md px-3 py-2 text-sm font-medium">Contacts</a>
+              <x-nav-link href="/" active="{{request()->is('/')}}" aria-current='{{ request()->is("/") ? "page" : "false" }}'>Courses</x-nav-link>
+              <x-nav-link href="compare" active="{{request()->is('compare')}}" aria-current='{{ request()->is("/compare") ? "page" : "false" }}'>Compare</x-nav-link>
+              <x-nav-link href="favorites" active="{{request()->is('favorites')}}" aria-current='{{ request()->is("/favorites") ? "page" : "false" }}'>Favorites</x-nav-link>
+              <x-nav-link href="contacts" active="{{request()->is('contacts')}}" aria-current='{{ request()->is("/contacts") ? "page" : "false" }}'> Contacts</x-nav-link>
             </div>
           </div>
         </div>

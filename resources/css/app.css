@@ -5,10 +5,5 @@ body{
     position: relative;
 }
 main{
-    background-color: #000;
-    height: 200px;
+    height: 2000px;
 };
-footer{
-    position: absolute;
-    bottom: 0px;
-}
