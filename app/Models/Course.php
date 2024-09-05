@@ -13,6 +13,7 @@ class Course extends Model
         'duration',
         'cost',
         'name',
+        'skills',
     ];
 
     
