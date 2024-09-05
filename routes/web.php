@@ -14,5 +14,6 @@ Route::get('/favorites', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
-
-
+Route::get('/auth', function () {
+    return view('auth');
+});
