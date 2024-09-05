@@ -15,6 +15,4 @@ class Course extends Model
         'name',
         'skills',
     ];
-
-    
 }
